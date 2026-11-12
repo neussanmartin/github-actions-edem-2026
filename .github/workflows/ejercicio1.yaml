@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Leer variables en Job 2
-        run: echo "Confirmando desde el segundo job: ${{ env.CURSO_NOMBRE }}"
+        run: echo "Confirmando desde el segundo job ${{ env.CURSO_NOMBRE }}"
