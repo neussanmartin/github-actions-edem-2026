@@ -9,5 +9,5 @@ jobs:
       - run: echo "Hello there!"
       - uses: actions/checkout@v3
       - name: display contents of list.txt
-        run: cat ./github/workflows/list.txt
+        run: cat ./.github/workflows/list.txt
       - run: echo "I am step 4!"
