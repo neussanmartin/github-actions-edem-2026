@@ -1,5 +1,3 @@
-name: 01 - Variables de Entorno Globales
-
 on:
   workflow_dispatch:
 
