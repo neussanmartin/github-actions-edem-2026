@@ -1,0 +1,21 @@
+name: 01 - Variables de Entorno Globales
+
+on:
+  workflow_dispatch:
+
+env:
+  CURSO_NOMBRE: "Automatizacion con GitHub Actions"
+  ENTORNO: "Produccion"
+
+jobs:
+  job-uno:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Leer variables en Job 1
+        run: echo "Bienvenido al curso $CURSO_NOMBRE en entorno $ENTORNO"
+
+  job-dos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Leer variables en Job 2
+        run: echo "Confirmando desde el segundo job: ${{ env.CURSO_NOMBRE }}"
